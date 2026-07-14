@@ -11,23 +11,19 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
   - title: "CV"
     url: /cv/
-    
-  # - title: "CV"
+
+  # 以下栏目暂无内容，先从导航栏隐藏。需要时取消注释即可恢复。
+  # - title: "Talks"
+  #   url: /talks/
+  # - title: "Teaching"
+  #   url: /teaching/
+  # - title: "Portfolio"
+  #   url: /portfolio/
+  # - title: "Blog Posts"
+  #   url: /year-archive/
+  # - title: "CV (JSON)"
   #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/

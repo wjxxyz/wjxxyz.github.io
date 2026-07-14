@@ -14,6 +14,11 @@
     },
     "profiles": [
       {
+        "network": "Google Scholar",
+        "username": "",
+        "url": "https://scholar.google.com/citations?user=p3NukvUAAAAJ&hl=zh-CN"
+      },
+      {
         "network": "GitHub",
         "username": "wjxxyz",
         "url": "https://github.com/wjxxyz"
@@ -92,7 +97,7 @@
       "name": "BridgeRemoval",
       "publisher": "ICML 2026（第二作者，已录用）",
       "releaseDate": "2026-04-01",
-      "website": "",
+      "website": "https://bridgeremoval.github.io/",
       "summary": "负责扩散桥视频目标消除框架及自适应掩码调制模块的架构设计，利用源视频结构先验提升目标移除完整性与背景内容一致性。在DAVIS及自建视频目标消除数据集上视觉质量与时序一致性达到SOTA，并提升推理速度。"
     }
   ],
