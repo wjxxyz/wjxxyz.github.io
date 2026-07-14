@@ -1,0 +1,117 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Jiaxin Wang
+  given: Jiaxin
+  family: Wang
+  alternate: '王嘉欣'
+  pronunciation: 'Wáng Jiāxīn'
+  pronouns: ''
+postnominals: []
+status:
+  icon: "🎬"
+role: M.S. Student in Computer Science
+bio: |
+  Jiaxin Wang is a master's student in Computer Science at Beijing Jiaotong
+  University, advised by Prof. Huihui Bai. His research centers on diffusion
+  models for human motion generation and video generation & editing, with
+  first- and co-authored papers at ACM MM and ICML.
+
+  WeChat: `shenhaiankang-wjx`
+
+affiliations:
+  - name: Beijing Jiaotong University
+    url: https://www.bjtu.edu.cn/
+
+links:
+  - icon: at-symbol
+    url: mailto:wjx15686366415@163.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/wjxxyz
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=p3NukvUAAAAJ
+
+interests:
+  - Diffusion Models
+  - Human Motion Generation
+  - Video Generation & Editing
+  - Efficient Sampling & Distillation
+
+education:
+  - degree: M.S. Computer Science and Technology
+    institution: Beijing Jiaotong University
+    start: 2024-09-01
+    end: 2027-06-30
+    summary: |
+      Advised by Prof. [Huihui Bai](https://faculty.bjtu.edu.cn/8181/). Research on diffusion-based
+      human motion generation and video object removal.
+  - degree: B.Eng. Computer Science and Technology
+    institution: North China University of Technology
+    start: 2020-09-01
+    end: 2024-06-30
+    summary: |
+      Ranked 2/109. Recommended for admission (保研) to Beijing Jiaotong University.
+
+experience:
+  - role: Computer Vision Algorithm Intern
+    org: Meitu MTLab
+    start: 2025-09-01
+    end: 2026-06-30
+    summary: |
+      Trained Wan 2.1/2.2 video generation models with FSDP distributed training for video portrait,
+      subtitle, and passerby removal. Injected conditions via channel concatenation to guide the
+      diffusion model, and designed an independent mask-prediction head that perceives target regions
+      without an explicit mask input. Built a multi-source paired-video pipeline (Blender 3D rendering
+      + video compositing) producing ~50k long-video clips of 301 frames each.
+  - role: Large-Model Algorithm Intern
+    org: Academy of Military Sciences, Information Research Center
+    start: 2024-06-01
+    end: 2024-09-30
+    summary: |
+      Collected, cleaned, and constructed safety corpora for large models, and fine-tuned models on the
+      cleaned data. Deployed and served models with vLLM and Ollama. Won an award in the finals of a
+      large-model data-safety competition.
+
+skills:
+  - name: Programming & Tools
+    items:
+      - label: Python
+        level: 5
+      - label: PyTorch
+        level: 5
+      - label: C/C++
+        level: 3
+      - label: Linux & Git
+        level: 4
+  - name: Generative Modeling
+    items:
+      - label: Diffusion Models
+        level: 5
+      - label: Flow Matching & Distillation (DMD)
+        level: 4
+      - label: VQ-VAE
+        level: 4
+      - label: FSDP Distributed Training
+        level: 4
+
+languages:
+  - name: Chinese
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Professional (CET-6)
+
+awards:
+  - title: National Third Prize, Lanqiao Cup Programming Contest
+    awarder: Lanqiao Cup
+    date: "2022-06-01"
+    summary: National third prize in the Lanqiao Cup national programming competition.
+    icon: hero/trophy
+  - title: National Third Prize, GPLT Programming Ability Contest
+    awarder: GPLT (团体程序设计天梯赛)
+    date: "2022-04-01"
+    summary: National third prize in the GPLT collegiate programming ability contest.
+    icon: hero/trophy
