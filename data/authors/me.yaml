@@ -2,10 +2,10 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: 王嘉欣 Jiaxin Wang
+  display: Jiaxin Wang
   given: Jiaxin
   family: Wang
-  alternate: ''
+  alternate: '王嘉欣'
   pronunciation: 'Wáng Jiāxīn'
   pronouns: ''
 postnominals: []
