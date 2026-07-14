@@ -1,53 +1,33 @@
 ---
+layout: about
+title: about
 permalink: /
-title: "王嘉欣"
-author_profile: true
-redirect_from:
-  - /about/
-  - /about.html
+subtitle: M.S. Student in Computer Science, <a href='https://www.bjtu.edu.cn/'>Beijing Jiaotong University</a>
+
+profile:
+  align: right
+  image: prof_pic.png
+  image_circular: false # crops the image to make it circular
+  more_info: >
+    <p>Beijing, China</p>
+    <p><a href="mailto:wjx15686366415@163.com">wjx15686366415@163.com</a></p>
+
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
 
-计算机科学与技术硕士研究生，研究方向为扩散模型、人体运动生成与视频生成编辑，具备顶会论文研究及工业算法实习经历。
+I am a master's student in Computer Science and Technology at **[Beijing Jiaotong University](https://www.bjtu.edu.cn/)** (2024–2027), advised by Prof. **[Huihui Bai](https://faculty.bjtu.edu.cn/8181/)**. I received my B.Eng. in Computer Science from North China University of Technology (2020–2024), ranked 2/109, and was recommended for admission to BJTU.
 
-联系邮箱：[wjx15686366415@163.com](mailto:wjx15686366415@163.com)
+My research focuses on **diffusion models**, **human motion generation**, and **video generation & editing**. I am interested in efficient, high-fidelity generation directly in the raw / pixel space without relying on a VAE, decoupling condition injection from result prediction for end-to-end diffusion optimization.
 
-教育背景
-======
-* **北京交通大学**，计算机科学与技术，硕士研究生，2024.9-2027.6
-  * 导师：[白慧慧](https://faculty.bjtu.edu.cn/8181/)教授
-  * 北京交通大学一等奖学金、校三好学生、校优秀团员
-* **北方工业大学**，计算机科学与技术，工学学士，2020.9-2024.6
-  * 排名2/109（前2%），国家励志奖学金、一等奖学金、优秀毕业生，推免至北京交通大学
-
-实习经历
-======
-* **美图 MTLAB**，计算机视觉算法实习生，2025.9-2026.6
-  * 使用FSDP分布式训练Wan 2.1/2.2视频生成模型，面向视频人像、字幕与路人消除开展模型训练和方案迭代。采用通道拼接注入条件信息，引导扩散模型消除目标；设计独立掩码预测头，在无显式掩码输入时感知目标区域，预测消除结果视频；探索同步预测消除结果视频与精细Matting视频方案。
-  * 设计多源配对视频生成方案，结合Blender三维渲染与视频贴图合成，构建约5万组、每组301帧的长视频训练数据。
-* **中国军事科学院 \| 信息研究中心**，大模型算法工程师实习生，2024.6-2024.9
-  * 负责大模型安全语料的网页采集、清洗与数据集构建，基于清洗数据完成模型微调；使用vLLM与Ollama进行模型部署与调用，参与大模型数据安全竞赛并在决赛中获奖。
-
-论文与科研成果
-======
-* **SegMoDiff: Semantic-Faithful Text-to-Motion Generation via Segmented Raw-Sequence Diffusion**（ACM MM 2026，第一作者，已录用），2025.6-2026.7
-  * 主导SegMoDiff模型架构设计及论文撰写全流程，提出面向文本引导的原始动作序列分段扩散框架，并设计SegMoDiT、重叠上下文注意力（OCA）与片段级文本增强模块。
-  * 在HumanML3D与KIT-ML数据集上进行评测，FID和R-Precision@3达到SOTA；结合分布匹配蒸馏（DMD）减少采样步数，同时提升生成质量与推理速度。
-* **Learning Stochastic Bridges for Video Object Removal via Video-to-Video Translation**（ICML 2026，第二作者，已录用），2025.9-2026.4
-  * 负责扩散桥视频目标消除框架及自适应掩码调制模块的架构设计，并参与论文撰写；利用源视频结构先验提升目标移除完整性与背景内容一致性。在DAVIS及自建视频目标消除数据集上进行评测，视觉质量与时序一致性达到SOTA，并提升推理速度。[项目主页](https://bridgeremoval.github.io/)
-* **北京交通大学 \| raw-space动作序列扩散生成研究**，2026.1-至今
-  * 得益于近期像素空间图像生成模型领域的飞速发展，以及业界越来越强的对超高像素图像生成的需求，研究如何在不借助VAE的情况下做到又好又快生成。解耦条件注入与结果预测，减少模型主干token算力要求，实现端到端扩散模型优化，取得了较为领先的生成效果。
-* **北京交通大学 \| Text-to-Motion离散扩散研究**，2024.4-2025.6
-  * 基于VQ-VAE构建动作序列离散表示，研究VQ-Diffusion在文本驱动动作生成中的性能优化与可编辑生成能力。将离散扩散采样压缩至10步，在提高生成速度的同时取得0.051的Motion FID。
-
-技术能力
-======
-* **编程语言**：Python, C/C++
-* **生成模型与算法**：Diffusion, Flow Matching, DMD, VQ-VAE
-* **视觉与工程工具**：PyTorch, FSDP, OpenCV, Wan 2.1/2.2, Blender, Linux, Git, vLLM, Ollama
-
-荣誉奖项
-======
-* 蓝桥杯编程大赛全国三等奖
-* 天梯赛团体赛全国三等奖
-
-更多详细信息请查看 [简历页面]({{ "/cv/" | relative_url }})。
+I have first- and co-authored papers at top venues (ACM MM, ICML) and completed algorithm internships at **Meitu MTLab** (video generation & object removal) and the **Academy of Military Sciences** (large-model safety). For more details, see my [CV](/cv/).
