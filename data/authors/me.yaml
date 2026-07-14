@@ -11,10 +11,10 @@ name:
 postnominals: []
 status:
   icon: "🎬"
-role: M.S. Student in Computer Science
+role: M.S. Student in Information and Communication Engineering
 bio: |
-  Jiaxin Wang is a master's student in Computer Science at Beijing Jiaotong
-  University, advised by Prof. Huihui Bai. His research centers on diffusion
+  Jiaxin Wang is a master's student in Information and Communication Engineering
+  at Beijing Jiaotong University, advised by Prof. Huihui Bai. His research centers on diffusion
   models for human motion generation and video generation & editing, with
   first- and co-authored papers at ACM MM and ICML.
 
@@ -42,7 +42,7 @@ interests:
   - Efficient Sampling & Distillation
 
 education:
-  - degree: M.S. Computer Science and Technology
+  - degree: M.S. Information and Communication Engineering
     institution: Beijing Jiaotong University
     start: 2024-09-01
     end: 2027-06-30

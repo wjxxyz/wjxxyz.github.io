@@ -38,7 +38,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am a master's student in Computer Science and Technology at [Beijing Jiaotong University](https://www.bjtu.edu.cn/) (2024–2027), advised by Prof. [Huihui Bai](https://faculty.bjtu.edu.cn/8181/). I received my B.Eng. in Computer Science from North China University of Technology (2020–2024), ranked 2/109, and was recommended for admission to BJTU.
+        I am a master's student in Information and Communication Engineering at [Beijing Jiaotong University](https://www.bjtu.edu.cn/) (2024–2027), advised by Prof. [Huihui Bai](https://faculty.bjtu.edu.cn/8181/). I received my B.Eng. in Computer Science from North China University of Technology (2020–2024), ranked 2/109, and was recommended for admission to BJTU.
 
         My research focuses on **diffusion models**, **human motion generation**, and **video generation & editing**. I am interested in efficient, high-fidelity generation directly in the raw / pixel space without relying on a VAE, and in decoupling condition injection from result prediction for end-to-end diffusion optimization.
 
