@@ -66,6 +66,14 @@ sections:
         exclude_featured: false
     design:
       view: citation
+  - block: home-experience
+    id: experience
+    content:
+      title: Experience
+      subtitle: Industry & Research
+      username: me
+    design:
+      date_format: 'Jan 2006'
   # - block: collection
   #   id: talks
   #   content:

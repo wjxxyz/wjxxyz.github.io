@@ -59,18 +59,30 @@ education:
 experience:
   - role: Computer Vision Algorithm Intern
     org: Meitu MTLab
+    icon: hero/video-camera
     start: 2025-09-01
     end: 2026-06-30
+    tags:
+      - Wan 2.1/2.2
+      - FSDP
+      - Video Generation
+      - Data Pipeline
     summary: |
       Trained Wan 2.1/2.2 video generation models with FSDP distributed training for video portrait,
       subtitle, and passerby removal. Injected conditions via channel concatenation to guide the
       diffusion model, and designed an independent mask-prediction head that perceives target regions
       without an explicit mask input. Built a multi-source paired-video pipeline (Blender 3D rendering
-      + video compositing) producing ~50k long-video clips of 301 frames each.
+      and video compositing) producing ~50k long-video clips of 301 frames each.
   - role: Large-Model Algorithm Intern
     org: Academy of Military Sciences, Information Research Center
+    icon: hero/cpu-chip
     start: 2024-06-01
     end: 2024-09-30
+    tags:
+      - LLM Fine-tuning
+      - vLLM
+      - Ollama
+      - Safety Data
     summary: |
       Collected, cleaned, and constructed safety corpora for large models, and fine-tuned models on the
       cleaned data. Deployed and served models with vLLM and Ollama. Won an award in the finals of a

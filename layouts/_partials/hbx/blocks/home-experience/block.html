@@ -1,0 +1,85 @@
+{{/* Homepage-only experience timeline. Data remains owned by the author profile. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+{{ $design := $block.design }}
+{{ if not (reflect.IsMap $design) }}{{ $design = dict }}{{ end }}
+
+{{ $username := index $content "username" | default "me" }}
+{{ $profile := partial "functions/get_author_profile" $username }}
+{{ $items := $profile.experience | default $profile.work }}
+{{ $title := index $content "title" | default "Experience" }}
+{{ $subtitle := index $content "subtitle" | default "" }}
+{{ $date_format := index $design "date_format" | default "Jan 2006" }}
+
+{{ if $items }}
+<div class="mx-auto w-full max-w-screen-lg px-6 py-8 lg:py-12">
+  <header class="mb-10 text-center">
+    {{ with $subtitle }}
+      <p class="mb-2 text-sm font-semibold uppercase text-primary-600 dark:text-primary-400">{{ . }}</p>
+    {{ end }}
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">{{ $title }}</h2>
+  </header>
+
+  <div class="relative">
+    <div class="absolute bottom-4 left-5 top-4 w-px bg-gray-200 dark:bg-gray-700 sm:left-7"></div>
+
+    <div class="space-y-6">
+      {{ range $items }}
+        {{ $role := index . "role" | default (index . "position") }}
+        {{ $org := index . "org" | default (index . "company_name") }}
+        {{ $start := index . "start" | default (index . "date_start") }}
+        {{ $end := index . "end" | default (index . "date_end") }}
+        {{ $icon := index . "icon" | default "hero/briefcase" }}
+
+        <article class="group relative pl-14 sm:pl-20">
+          <div class="absolute left-0 top-6 flex h-10 w-10 items-center justify-center rounded-lg border border-primary-200 bg-white text-primary-600 shadow-sm transition-colors group-hover:border-primary-400 dark:border-primary-800 dark:bg-gray-900 dark:text-primary-400 sm:left-2">
+            {{ partial "functions/get_icon" (dict "name" $icon "attributes" "class='h-5 w-5'") }}
+          </div>
+
+          <div class="rounded-lg border border-gray-200 bg-white p-5 shadow-sm transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-primary-300 group-hover:shadow-md dark:border-gray-700 dark:bg-gray-900/70 dark:group-hover:border-primary-700 sm:p-7">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+              <div class="min-w-0">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ $role }}</h3>
+                <p class="mt-1 font-semibold text-primary-600 dark:text-primary-400">{{ $org }}</p>
+              </div>
+
+              <div class="flex shrink-0 items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+                {{ partial "functions/get_icon" (dict "name" "hero/calendar-days" "attributes" "class='h-4 w-4'") }}
+                <time>
+                  {{ if $start }}
+                    {{ $parsed_start := try (time $start) }}
+                    {{ if not $parsed_start.Err }}{{ $parsed_start.Value | time.Format $date_format }}{{ else }}{{ $start }}{{ end }}
+                    <span aria-hidden="true"> - </span>
+                  {{ end }}
+                  {{ if $end }}
+                    {{ $parsed_end := try (time $end) }}
+                    {{ if not $parsed_end.Err }}{{ $parsed_end.Value | time.Format $date_format }}{{ else }}{{ $end }}{{ end }}
+                  {{ else }}
+                    Present
+                  {{ end }}
+                </time>
+              </div>
+            </div>
+
+            {{ with index . "summary" }}
+              <div class="prose prose-gray mt-4 max-w-none text-sm leading-relaxed dark:prose-invert sm:text-base">
+                {{ . | emojify | $page.RenderString }}
+              </div>
+            {{ end }}
+
+            {{ with index . "tags" }}
+              <div class="mt-5 flex flex-wrap gap-2" aria-label="Technologies">
+                {{ range . }}
+                  <span class="rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-300">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
