@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>Beijing, China</p>
     <p><a href="mailto:wjx15686366415@163.com">wjx15686366415@163.com</a></p>
+    <p>WeChat: 15686366415</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,4 +31,12 @@ I am a master's student in Computer Science and Technology at **[Beijing Jiaoton
 
 My research focuses on **diffusion models**, **human motion generation**, and **video generation & editing**. I am interested in efficient, high-fidelity generation directly in the raw / pixel space without relying on a VAE, decoupling condition injection from result prediction for end-to-end diffusion optimization.
 
-I have first- and co-authored papers at top venues (ACM MM, ICML) and completed algorithm internships at **Meitu MTLab** (video generation & object removal) and the **Academy of Military Sciences** (large-model safety). For more details, see my [CV](/cv/).
+I have first- and co-authored papers at top venues (ACM MM, ICML). For more details, see my [CV](/cv/).
+
+## Experience
+
+**Meitu MTLab** — Computer Vision Algorithm Intern · *Sep 2025 – Jun 2026*
+Trained Wan 2.1/2.2 video generation models with FSDP distributed training for video portrait, subtitle, and passerby removal. Injected conditions via channel concatenation to guide the diffusion model, and designed an independent mask-prediction head that perceives target regions without explicit mask input. Built a multi-source paired video pipeline (Blender 3D rendering + video compositing) producing ~50k long-video clips of 301 frames each.
+
+**Academy of Military Sciences**, Information Research Center — Large-Model Algorithm Intern · *Jun 2024 – Sep 2024*
+Collected, cleaned, and constructed safety corpora for large models, and fine-tuned models on the cleaned data. Deployed and served models with vLLM and Ollama. Won an award in the finals of a large-model data-safety competition.
