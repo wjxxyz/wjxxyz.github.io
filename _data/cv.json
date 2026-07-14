@@ -91,14 +91,14 @@
       "publisher": "ACM MM 2026（第一作者，已录用）",
       "releaseDate": "2026-07-01",
       "website": "",
-      "summary": "提出面向文本引导的原始动作序列分段扩散框架，通过将原始序列切分为可处理片段直接实现细粒度语义建模；设计带重叠上下文注意力（OCA）的 SegMoDiT 与片段级文本增强模块，并融入分布匹配蒸馏（DMD）减少采样步数。在语义保真度与推理速度上均超越现有最优方法。"
+      "summary": "A text-to-motion diffusion framework that operates directly on segmented raw sequences for fine-grained semantic modeling. It introduces SegMoDiT with overlapping contextual attention (OCA), segment-wise text enhancement, and distribution matching distillation (DMD), outperforming state-of-the-art methods in semantic fidelity with faster inference."
     },
     {
       "name": "Learning Stochastic Bridges for Video Object Removal via Video-to-Video Translation",
       "publisher": "ICML 2026（第二作者，已录用）",
       "releaseDate": "2026-04-01",
       "website": "https://bridgeremoval.github.io/",
-      "summary": "将视频目标消除重新建模为基于随机桥的视频到视频翻译任务，建立从源视频到目标视频的直接随机路径，充分利用输入视频的结构先验；提出自适应掩码调制策略平衡背景保真与生成灵活性，并构建 BridgeRemoval-Bench 评测基准。在视觉质量与时序一致性上显著优于现有方法。"
+      "summary": "Reformulates video object removal as a video-to-video translation task via an SDE-based stochastic bridge model, establishing a direct stochastic path from the source video to the target. It leverages input priors for better removal, introduces an adaptive mask modulation strategy, and builds the BridgeRemoval-Bench benchmark, outperforming existing methods in visual quality and temporal consistency."
     }
   ],
   "presentations": [],

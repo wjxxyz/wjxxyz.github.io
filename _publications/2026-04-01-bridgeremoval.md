@@ -3,13 +3,13 @@ title: "Learning Stochastic Bridges for Video Object Removal via Video-to-Video 
 collection: publications
 category: conferences
 permalink: /publication/2026-04-01-bridgeremoval
-excerpt: '将视频目标消除重新建模为基于随机桥（stochastic bridge）的视频到视频翻译任务 BridgeRemoval，建立从源视频到目标视频的直接随机路径，充分利用输入视频的结构先验；提出自适应掩码调制策略平衡背景保真与生成灵活性，在视觉质量与时序一致性上显著优于现有方法。'
+excerpt: 'We reformulate video object removal as a video-to-video translation task via an SDE-based stochastic bridge model, establishing a direct stochastic path from the source video to the target. It leverages input priors for better removal, introduces an adaptive mask modulation strategy, and outperforms existing methods in visual quality and temporal consistency.'
 date: 2026-04-01
 venue: 'International Conference on Machine Learning (ICML) 2026'
 paperurl: 'https://bridgeremoval.github.io/'
-citation: 'Zijie Lou*, Xiangwei Feng*, Jiaxin Wang, Jiangtao Yao, Fei Che, Tianbao Liu, Chengjing Wu, Xiaochao Qu, Luoqi Liu, Ting Liu. (2026). &quot;Learning Stochastic Bridges for Video Object Removal via Video-to-Video Translation.&quot; <i>International Conference on Machine Learning (ICML) 2026</i>. 已录用.'
+citation: 'Zijie Lou*, Xiangwei Feng*, Jiaxin Wang, Jiangtao Yao, Fei Che, Tianbao Liu, Chengjing Wu, Xiaochao Qu, Luoqi Liu, Ting Liu. (2026). &quot;Learning Stochastic Bridges for Video Object Removal via Video-to-Video Translation.&quot; <i>International Conference on Machine Learning (ICML) 2026</i>. Accepted.'
 ---
-（第二作者，ICML 2026 已录用）
+*Jiaxin Wang (Second Author), ICML 2026 (Accepted)*
 
 ## Abstract
 
@@ -17,9 +17,9 @@ Existing video object removal methods predominantly rely on diffusion models fol
 
 ## Contributions
 
-- 提出 **BridgeRemoval**——一个基于 SDE 随机桥模型的视频到视频生成框架，将视频目标消除重新建模为从源视频到目标视频的直接随机路径，有效利用输入先验实现更优的目标移除。
-- 引入自适应掩码调制（adaptive mask modulation）策略，根据掩码特性动态平衡背景保真度与生成灵活性，在不同尺度目标上均保持稳健性能。
-- 构建 **BridgeRemoval-Bench** 评测基准，涵盖多样化场景并提供精细标注掩码，用于全面评估视频目标消除模型。
-- 大量实验证明该方法在多样真实场景下的有效性，在视觉质量与时序连贯性上均超越现有方法，并展现出扩展到其他视频编辑任务的潜力。
+- We propose **BridgeRemoval**, a novel video-to-video generative framework that utilizes an SDE-based bridge model to reformulate video object removal. By establishing a direct stochastic path from the source video to the target, our method effectively leverages input priors to achieve better object removal.
+- We introduce an adaptive mask modulation strategy that dynamically balances the trade-off between background fidelity and generative flexibility, ensuring robust performance across objects of varying scales.
+- To provide a comprehensive evaluation of video object removal models, we propose **BridgeRemoval-Bench**, which encompasses a wide variety of scenarios and provides meticulously annotated masks.
+- Extensive experiments demonstrate the effectiveness of our approach in diverse real-world scenarios, outperforming existing methods in both visual quality and temporal coherence, while also highlighting the potential of our framework to be extended to other video editing tasks.
 
-[项目主页](https://bridgeremoval.github.io/)
+[Project Page](https://bridgeremoval.github.io/)
