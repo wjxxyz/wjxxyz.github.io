@@ -45,7 +45,7 @@ slides:
 
 <!-- no-branding -->
 # Example Talk
-### Dr. Alex Johnson · Meta AI
+### Jiaxin Wang · Beijing Jiaotong University
 
 ---
 
