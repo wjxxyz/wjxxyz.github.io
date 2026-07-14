@@ -87,18 +87,18 @@
   "references": [],
   "publications": [
     {
-      "name": "SegMoDiff",
+      "name": "SegMoDiff: Semantic-Faithful Text-to-Motion Generation via Segmented Raw-Sequence Diffusion",
       "publisher": "ACM MM 2026（第一作者，已录用）",
       "releaseDate": "2026-07-01",
       "website": "",
-      "summary": "提出面向文本引导下的原始动作序列的分段扩散框架，设计SegMoDiT、重叠上下文注意力（OCA）与片段级文本增强模块。在HumanML3D与KIT-ML数据集上FID和R-Precision@3达到SOTA，结合分布匹配蒸馏（DMD）减少采样步数，同时提升生成质量与推理速度。"
+      "summary": "提出面向文本引导的原始动作序列分段扩散框架，通过将原始序列切分为可处理片段直接实现细粒度语义建模；设计带重叠上下文注意力（OCA）的 SegMoDiT 与片段级文本增强模块，并融入分布匹配蒸馏（DMD）减少采样步数。在语义保真度与推理速度上均超越现有最优方法。"
     },
     {
-      "name": "BridgeRemoval",
+      "name": "Learning Stochastic Bridges for Video Object Removal via Video-to-Video Translation",
       "publisher": "ICML 2026（第二作者，已录用）",
       "releaseDate": "2026-04-01",
       "website": "https://bridgeremoval.github.io/",
-      "summary": "负责扩散桥视频目标消除框架及自适应掩码调制模块的架构设计，利用源视频结构先验提升目标移除完整性与背景内容一致性。在DAVIS及自建视频目标消除数据集上视觉质量与时序一致性达到SOTA，并提升推理速度。"
+      "summary": "将视频目标消除重新建模为基于随机桥的视频到视频翻译任务，建立从源视频到目标视频的直接随机路径，充分利用输入视频的结构先验；提出自适应掩码调制策略平衡背景保真与生成灵活性，并构建 BridgeRemoval-Bench 评测基准。在视觉质量与时序一致性上显著优于现有方法。"
     }
   ],
   "presentations": [],

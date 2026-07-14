@@ -26,11 +26,11 @@ redirect_from:
 
 论文与科研成果
 ======
-* **ACM MM 2026 \| SegMoDiff**（第一作者，已录用），2025.6-2026.7
-  * 主导SegMoDiff模型架构设计及论文撰写全流程，提出面向文本引导下的原始动作序列的分段扩散框架，并设计SegMoDiT、重叠上下文注意力（OCA）与片段级文本增强模块。
+* **SegMoDiff: Semantic-Faithful Text-to-Motion Generation via Segmented Raw-Sequence Diffusion**（ACM MM 2026，第一作者，已录用），2025.6-2026.7
+  * 主导SegMoDiff模型架构设计及论文撰写全流程，提出面向文本引导的原始动作序列分段扩散框架，并设计SegMoDiT、重叠上下文注意力（OCA）与片段级文本增强模块。
   * 在HumanML3D与KIT-ML数据集上进行评测，FID和R-Precision@3达到SOTA；结合分布匹配蒸馏（DMD）减少采样步数，同时提升生成质量与推理速度。
-* **ICML 2026 \| BridgeRemoval**（第二作者，已录用），2025.9-2026.4
-  * 负责扩散桥视频目标消除框架及自适应掩码调制模块的架构设计，并参与论文撰写；利用源视频结构先验提升目标移除完整性与背景内容一致性。在DAVIS及自建视频目标消除数据集上进行评测，视觉质量与时序一致性达到SOTA，并提升推理速度。
+* **Learning Stochastic Bridges for Video Object Removal via Video-to-Video Translation**（ICML 2026，第二作者，已录用），2025.9-2026.4
+  * 负责扩散桥视频目标消除框架及自适应掩码调制模块的架构设计，并参与论文撰写；利用源视频结构先验提升目标移除完整性与背景内容一致性。在DAVIS及自建视频目标消除数据集上进行评测，视觉质量与时序一致性达到SOTA，并提升推理速度。[项目主页](https://bridgeremoval.github.io/)
 * **北京交通大学 \| raw-space动作序列扩散生成研究**，2026.1-至今
   * 得益于近期像素空间图像生成模型领域的飞速发展，以及业界越来越强的对超高像素图像生成的需求，研究如何在不借助VAE的情况下做到又好又快生成。解耦条件注入与结果预测，减少模型主干token算力要求，实现端到端扩散模型优化，取得了较为领先的生成效果。
 * **北京交通大学 \| Text-to-Motion离散扩散研究**，2024.4-2025.6
