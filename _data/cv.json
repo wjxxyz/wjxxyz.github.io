@@ -1,152 +1,102 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "王嘉欣",
+    "email": "wjx15686366415@163.com",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://wjxxyz.github.io",
+    "summary": "计算机科学与技术硕士研究生，研究方向为扩散模型、人体运动生成与视频生成编辑，具备顶会论文研究及工业算法实习经历。",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "北京",
+      "countryCode": "CN",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "wjxxyz",
+        "url": "https://github.com/wjxxyz"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "美图 MTLAB",
+      "position": "计算机视觉算法实习生",
+      "startDate": "2025-09-01",
+      "endDate": "2026-06-01",
+      "summary": "",
+      "highlights": [
+        "使用FSDP分布式训练Wan 2.1/2.2视频生成模型，面向视频人像、字幕与路人消除开展模型训练和方案迭代。采用通道拼接注入条件信息，引导扩散模型消除目标；设计独立掩码预测头，在无显式掩码输入时感知目标区域，预测消除结果视频；探索同步预测消除结果视频与精细Matting视频方案。",
+        "设计多源配对视频生成方案，结合Blender三维渲染与视频贴图合成，构建约5万组、每组301帧的长视频训练数据。"
+      ]
+    },
+    {
+      "company": "中国军事科学院 | 信息研究中心",
+      "position": "大模型算法工程师实习生",
+      "startDate": "2024-06-01",
+      "endDate": "2024-09-01",
+      "summary": "",
+      "highlights": [
+        "负责大模型安全语料的网页采集、清洗与数据集构建，基于清洗数据完成模型微调；使用vLLM与Ollama进行模型部署与调用，参与大模型数据安全竞赛并在决赛中获奖。"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "北京交通大学",
+      "area": "计算机科学与技术，硕士研究生",
+      "studyType": "硕士",
+      "startDate": "2024-09-01",
+      "endDate": "2027-06-01",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "北方工业大学",
+      "area": "计算机科学与技术，工学学士",
+      "studyType": "学士",
+      "startDate": "2020-09-01",
+      "endDate": "2024-06-01",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "编程语言",
+      "keywords": ["Python", "C/C++"]
+    },
+    {
+      "name": "生成模型与算法",
+      "keywords": ["Diffusion", "Flow Matching", "DMD", "VQ-VAE"]
+    },
+    {
+      "name": "视觉与工程工具",
+      "keywords": ["PyTorch", "FSDP", "OpenCV", "Wan 2.1/2.2", "Blender", "Linux", "Git", "vLLM", "Ollama"]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "SegMoDiff",
+      "publisher": "ACM MM 2026（第一作者，已录用）",
+      "releaseDate": "2026-07-01",
+      "website": "",
+      "summary": "提出面向文本引导下的原始动作序列的分段扩散框架，设计SegMoDiT、重叠上下文注意力（OCA）与片段级文本增强模块。在HumanML3D与KIT-ML数据集上FID和R-Precision@3达到SOTA，结合分布匹配蒸馏（DMD）减少采样步数，同时提升生成质量与推理速度。"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "BridgeRemoval",
+      "publisher": "ICML 2026（第二作者，已录用）",
+      "releaseDate": "2026-04-01",
+      "website": "",
+      "summary": "负责扩散桥视频目标消除框架及自适应掩码调制模块的架构设计，利用源视频结构先验提升目标移除完整性与背景内容一致性。在DAVIS及自建视频目标消除数据集上视觉质量与时序一致性达到SOTA，并提升推理速度。"
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }
