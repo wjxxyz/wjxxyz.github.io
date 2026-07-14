@@ -1,0 +1,30 @@
+.hb-ruby-name {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  ruby-position: unset;
+}
+
+.hb-ruby-name rt {
+  order: 2;
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.55em;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-gray-600);
+  background: none;
+  opacity: 1;
+  transform: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.dark .hb-ruby-name rt {
+  color: var(--color-gray-300);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.hb-ruby-name:hover rt {
+  transform: none;
+}
