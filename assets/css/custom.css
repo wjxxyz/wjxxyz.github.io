@@ -28,3 +28,8 @@
 .hb-ruby-name:hover rt {
   transform: none;
 }
+
+/* Education: one degree per row, full-width cards (override 2/3-col grid) */
+.resume-biography .grid.md\:grid-cols-2.xl\:grid-cols-3 {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
